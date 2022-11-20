@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
