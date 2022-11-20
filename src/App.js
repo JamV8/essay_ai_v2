@@ -6,7 +6,6 @@ function App() {
 
   const { Configuration, OpenAIApi } = require("openai");
   console.log("Test")
-  console.log(process.env.OPENAI_API_KEY)
 
   const [essay, setEssay] = useState('');
   const textEl = useRef();
@@ -15,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
