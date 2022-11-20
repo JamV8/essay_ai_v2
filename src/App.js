@@ -5,6 +5,7 @@ import {RingLoader} from "react-spinners";
 function App() {
 
   const { Configuration, OpenAIApi } = require("openai");
+  console.log("Test")
   console.log(process.env.OPENAI_API_KEY)
 
   const [essay, setEssay] = useState('');
