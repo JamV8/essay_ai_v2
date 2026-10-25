@@ -667,9 +667,7 @@ textarea::placeholder{color:var(--tx-3)}
   (async () => {
     try {
       if (!window.claude || typeof window.claude.use !== 'function') return;
-      const db = await window.claude.use('db');
-      if (!db) return;
-      return;
+      return; /* final reference: nothing is saved */
       const snap = await ref.get();
       if (snap.exists) {
         const d = snap.data() || {}; cfg = Object.assign({}, REC, d.choices || {}); notes = Object.assign({}, d.notes || {}); general = d.general || '';
